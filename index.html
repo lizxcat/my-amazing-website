@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <!-- Requirement-1.A -->
-  <title>Elizabeth's Project 1 Website</title>
-
+  <title>Elizabeth Dominguez | My Kitties</title>
   <style>
     body {
       font-family: "Helvetica Neue", Arial, sans-serif;
@@ -14,12 +13,19 @@
       line-height: 1.6;
     }
 
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
     header {
-      padding: 20px 60px;
+      padding: 20px 0;
       display: flex;
       justify-content: space-between;
       align-items: center;
       background-color: #f5f5f5;
+      flex-wrap: wrap;
     }
 
     header h1 {
@@ -29,164 +35,170 @@
       margin: 0;
     }
 
-    header nav a {
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
       text-decoration: none;
       color: #0077cc;
-      margin-left: 20px;
       font-weight: bold;
       transition: color 0.3s;
     }
 
-    header nav a:hover {
+    nav a:hover {
       color: #005999;
-    }
-
-    main {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 60px;
-    }
-
-    main .intro {
-      flex: 1;
-      padding-right: 40px;
-      font-size: 1.2em;
-    }
-
-    main img {
-      max-width: 300px;
-      border-radius: 8px;
     }
 
     section {
+      padding: 40px 0;
       display: flex;
-      justify-content: space-between;
-      padding: 40px 60px;
-      flex-wrap: wrap;
-    }
-
-    section div {
-      flex: 1;
-      min-width: 200px;
-      margin: 20px;
+      flex-direction: column;
+      gap: 20px;
     }
 
     h2 {
-      font-size: 18px;
-      margin-bottom: 15px;
+      font-size: 24px;
       color: #444;
     }
 
-    footer {
-      padding: 20px 60px;
-      display: flex;
-      justify-content: space-between;
+    p, ul {
+      font-size: 16px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    table, th, td {
+      border: 1px solid #555;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    figure {
+      margin: 20px 0;
+      text-align: center;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    figcaption {
       font-size: 14px;
       color: #555;
+      margin-top: 5px;
     }
 
-    footer a {
-      margin-left: 15px;
-      text-decoration: none;
-      color: #0077cc;
+    footer {
+      background: #d9e4e4;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 14px;
+      color: #555;
+      margin-top: 40px;
     }
 
-    footer a:hover {
-      color: #005999;
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      section {
+        padding: 20px 0;
+      }
     }
   </style>
 </head>
 <body>
 
-  <!-- Requirement-1.B -->
-  <header>
-      <h1>ELIZABETH | Home</h1>    
+  <div class="container">
+
+    <!-- Requirement-1.B -->
+    <header>
+      <h1>ELIZABETH | My Cats</h1>
       <!-- Requirement-1.D -->
       <nav>
-        <!-- Requirement-1.K -->
-        <a href="index.html">Home</a>
-        <!-- Requirement-1.K -->
-        <a href="hobbies.html">My Hobbies</a>
-        <!-- Requirement-1.K -->
-        <a href="kitties.html">My Cats</a>
+        <ul>
+          <!-- Requirement-1.K -->
+          <li><a href="index.html">Home</a></li>
+          <!-- Requirement-1.K -->
+          <li><a href="hobbies.html">My Hobbies</a></li>
+          <!-- Requirement-1.K -->
+          <li><a href="kitties.html">My Cats</a></li>
+        </ul>
       </nav>
-  </header>
+    </header>
 
-  <main>
-    <div class="intro">
+    <!-- Requirement-1.E -->
+    <section>
       <!-- Requirement-1.F -->
-      <h3>👩‍💻 Hello, I'm Elizabeth Dominguez</h3>
-      <h2>
-        Student Programmer at
-        <!-- Requirement-1.J -->
-        <a href="https://www.cpp.edu" target="_blank">Cal Poly Pomona</a>.
-      </h2>
-
+      <h2>Meet My Feline Friends!</h2>
       <!-- Requirement-1.G -->
-      <p>
-        At <b>Cal Poly Pomona</b>, I spend my time balancing academics, personal growth, and social life. I attend classes in my major, work on hands-on projects, and take advantage of opportunities to gain practical experience like internships or research.
-      </p>
-      <p>
-        As a student, I'm involved in student organizations and campus events, which help me connect with others and explore my interests. Outside of schoolwork, I focus on developing skills, building relationships, and preparing for my future career while making the most of my college experience.
-      </p>
-    </div>
+      <p>I have two wonderful kitties who bring joy and comfort to my daily life.</p>
 
-    <!-- Requirement-1.L & 1.M -->
-    <img src="images/IMG_1403.JPG" alt="Description">
-  </main>
-
-  <main>
-    <div class="intro">
-      <!-- Requirement-1.F -->
-      <h3>🏫 School Campus</h3>
-      <h2>Culture and College Life</h2>
-
-      <!-- Requirement-1.G -->
-      <p>
-        College life at CPP is a mix of academics, social activities, and hands-on learning. Students gain real-world experience through labs and projects, while enjoying a diverse campus community with clubs, events, and cultural activities. With sports, recreation, and plenty of spaces to study or hang out, CPP offers a balanced college experience that encourages learning, personal growth, and lasting friendships.
-      </p>
-      <br>
-      Take a look at the campus at <!-- Requirement-1.J --> <a href="https://www.cpp.edu/maps/" target="_blank">CPP Map</a>.
-    </div>
-
-    <!-- Requirement-1.L & 1.M -->
-    <img src="images/school.webp" alt="Description">
-  </main>
-
-  <section>
-    <div>
-      <!-- Requirement-1.F -->
-      <h2>Studies</h2>
       <!-- Requirement-1.H -->
       <ul>
-        <li>Programming</li>
-        <li>Web Development</li>
-        <li>Databases</li>
+        <li>Bubbles</li>
+        <li>Nablue</li>
       </ul>
-    </div>
-    <div>
-      <h2>Experience</h2>
-      <p>Senior at Cal Poly Pomona <br> CS Coursework & Projects</p>
-    </div>
-    <div>
-      <h2>Connect</h2>
-      <p>Email: <!-- Requirement-1.G --> <span>elizabethd1@cpp.edu</span></p>
-      <p>
-        <!-- Requirement-1.J -->
-        <a href="https://github.com/lizxcat">GitHub</a>
-      </p>
-    </div>
-  </section>
 
-  <!-- Requirement-1.C -->
-  <footer>
-    <div>PROJECT 1</div>
-    <div>
-      <!-- Requirement-1.J -->
-      <a href="https://github.com/lizxcat">GitHub</a>
-    </div>
-  </footer>
+      <!-- Requirement-1.L & 1.M -->
+      <figure>
+        <img src="images/IMG_5827.jpg" alt="My kitties relaxing together">
+        <figcaption>Bubbles and Nablue enjoying a sunny afternoon.</figcaption>
+      </figure>
+
+      <!-- Requirement-1.F -->
+      <h2>Favorite Foods</h2>
+      <!-- Requirement-1.G -->
+      <p>Each of my kitties has unique tastes. Below is a table showing their favorites:</p>
+
+      <!-- Requirement-1.I -->
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Favorite Food</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><span>Bubbles</span></td><td>Tuna</td></tr> <!-- Requirement-1.H -->
+          <tr><td><span>Nablue</span></td><td>Chicken</td></tr> <!-- Requirement-1.H -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Requirement-1.C -->
+    <footer>
+      <p>Return to <!-- Requirement-1.J --> <a href="index.html">Home</a></p>
+    </footer>
+
+  </div>
 
 </body>
 </html>
