@@ -4,135 +4,6 @@
   <meta charset="UTF-8">
   <!-- Requirement-1.A -->
   <title>Elizabeth Dominguez | My Hobbies</title>
-  <style>
-    body {
-      font-family: "Helvetica Neue", Arial, sans-serif;
-      margin: 0;
-      background-color: #e6efef;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-
-    /* Full-width header */
-    header {
-      background-color: #f5f5f5;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 20px 0;
-      flex-wrap: wrap;
-    }
-
-    /* Title flush to the left */
-    header h1 {
-      font-size: 12px;
-      letter-spacing: 2px;
-      font-weight: normal;
-      margin: 0;
-      padding-left: 20px; /* optional spacing from screen edge */
-      flex-shrink: 0;
-    }
-
-    /* Nav pushed to the right */
-    nav {
-      margin-left: auto;
-      padding-right: 20px; /* optional spacing from screen edge */
-    }
-
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #0077cc;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #005999;
-    }
-
-    section {
-      padding: 40px 0;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    h2 {
-      font-size: 24px;
-      color: #444;
-    }
-
-    p {
-      font-size: 16px;
-    }
-
-    img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
-
-    details img {
-      margin-top: 10px;
-    }
-
-    footer {
-      background: #d9e4e4;
-      padding: 20px 0;
-      text-align: center;
-      font-size: 14px;
-      color: #555;
-      margin-top: 40px;
-    }
-
-    @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      nav {
-        margin-left: 0;
-        padding-right: 0;
-        margin-top: 10px;
-      }
-
-      nav ul {
-        flex-direction: column;
-        gap: 10px;
-      }
-
-      section {
-        padding: 20px 0;
-      }
-    }
-
-    .image-row {
-      display: flex;      
-      gap: 10px;           
-      flex-wrap: wrap;     
-    }
-    .image-row img {
-      max-width: 100%;     
-      height: auto;
-    }
-  </style>
 </head>
 <body>
 
@@ -152,7 +23,7 @@
     </nav>
   </header>
 
-  <div class="container">
+  <div>
 
     <section>
       <!-- Requirement-1.F -->
@@ -164,10 +35,14 @@
       </p>
 
       <!-- Requirement-1.L & 1.M -->
-      <div class="image-row">
+      <figure>
         <img src="images/6E5F7E31-D177-46E5-BFC0-BFAD69E84262.JPG" alt="Pokemon Card Set" width="300">
+        <figcaption>One of my favorite Pokemon Card Sets.</figcaption>
+      </figure>
+      <figure>
         <img src="images/IMG_4691.JPG" alt="Pokemon Card Display" width="500">
-      </div>
+        <figcaption>My personal Pokemon card display.</figcaption>
+      </figure>
     </section>
 
     <section>
@@ -179,12 +54,15 @@
         The variety of fresh ingredients and the experience of cooking together 
         make it a special tradition.
       </p>
-      <!-- Requirement-1.N & 1.O -->
+      <!-- Requirement-1.Q & 1.P -->
       <details>
         <summary>My Favorite Hot Pot Ingredients</summary>
         <p>Beef slices, mushrooms, bok choy, and spicy broth are always must-haves.</p>
         <h3>Boiling Point in Arcadia</h3>
-        <img src="images/IMG_0383.JPG" alt="Hot Pot" width="500">
+        <figure>
+          <img src="images/IMG_0383.JPG" alt="Hot Pot" width="500">
+          <figcaption>Delicious hot pot at Boiling Point in Arcadia.</figcaption>
+        </figure>
       </details>
     </section>
 
@@ -194,12 +72,15 @@
       <!-- Requirement-1.G -->
       <p>
         I also enjoy playing video games. One of my current favorites is 
-        <!-- Requirement-1.J -->
+        <!-- Requirement-1.I -->
         <a href="https://www.marvelrivals.com/" target="_blank">Marvel Rivals</a>, 
         a team-based action game where Marvel characters come together in exciting battles.
       </p>
       <!-- Requirement-1.L & 1.M -->
-      <img src="images/star-lord-and-iron-fist-marvel-rivals.jpg" alt="Marvel Rivals">
+      <figure>
+        <img src="images/star-lord-and-iron-fist-marvel-rivals.jpg" alt="Marvel Rivals">
+        <figcaption>Marvel Rivals promotional art featuring Star-Lord and Iron Fist.</figcaption>
+      </figure>
     </section>
 
     <!-- Requirement-1.C -->
